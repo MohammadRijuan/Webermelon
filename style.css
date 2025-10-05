@@ -293,7 +293,7 @@ nav button:hover {
 .ad {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 80px;
@@ -753,7 +753,7 @@ hr {
 }
 
 .test-card {
-    flex: 0 0 calc(50% - 20px);
+    flex: 0 0 calc(50% - 18px);
     border: 1px solid gray;
     border-radius: 10px;
     padding: 40px;
@@ -957,7 +957,7 @@ hr {
     .web-2 {
         flex-direction: column;
         gap: 20px;
-        width: 100%;
+        max-width: 100%;
     }
 
     .web,
@@ -974,6 +974,7 @@ hr {
     .case-container {
         margin-top: 60px;
         padding: 0 15px;
+        max-width: 565px;
     }
 
     .case-container h1 {
@@ -982,12 +983,12 @@ hr {
 
     .card-container {
         grid-template-columns: 1fr;
-       
         gap: 15px;
+        max-width: 556px;
     }
 
     .card {
-        max-width: 100%;
+        max-width: 450px;
         text-align: center;
        
     }
@@ -1064,79 +1065,41 @@ hr {
         border: 1px solid gray;
     }
 
-    /* Card content */
-    .test-card img {
-        width: 50px;
-       
-        height: auto;
+    /* ad */
+
+    .ad-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ad{
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
-    .test-card h4 {
-        font-size: 1rem;
-        margin-top: 10px;
-    }
-
-    .test-card p {
-        font-size: 0.85rem;
-        margin-top: 10px;
-    }
-
-    .stars img {
-        width: 15px;
-        height: auto;
-        margin-right: 2px;
-    }
-
-    .test-card button {
-        font-size: 0.85rem;
-        padding: 8px 12px;
-        gap: 5px;
-    }
-
-
-    .prev,
-    .next {
-        display: none;
-    }
-
-    /* Card content */
-    .test-card {
-        width: 350px;
-        height: 350px;
-    }
-
-    .test-card img {
-        width: 50px;
-        /* height: auto; */
-    }
-
-    .test-card h4 {
-        font-size: 1rem;
-        margin-top: 10px;
-    }
-
-    .test-card p {
-        font-size: 0.85rem;
-        margin-top: 10px;
-    }
-
-    .test-card button {
-        font-size: 0.85rem;
-        padding: 8px 12px;
-        gap: 5px;
-    }
-
-    .stars img {
-        width: 15px;
-        height: auto;
-        margin-right: 2px;
-    }
-
+    /* testimonial */
     
-    .prev,
-    .next {
-        display: none;
+    .test-container {
+        flex-direction: row;
+        gap: 15px;
+        max-width: 516px;
     }
+    .test-card {
+        flex: 0 0 calc(50% - 5px);
+        max-width: 550px;
+        padding: 30px;
+    }
+    .test-card img {
+        width: 45px;
+    }
+    .test-card h4 {
+        font-size: 1rem;
+    }
+    .test-card p {
+        font-size: 0.9rem;
+    }
+    
+    
+    
 
     /* accelerate */
     .acc {
@@ -1238,5 +1201,207 @@ hr {
         
     }
 
+}
+
+
+
+/* Tablet */
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
+
+    /* Navbar */ 
+   
+    .n-item {
+        gap: 25px;
+    }
+    .nav button {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    .hamburger {
+        display: flex;
+        display: none;
+    }
+
+    /* Banner */
+    .banner h1 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .banner p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .word {
+        font-size: 13px;
+        padding: 5px 15px;
+    }
+    .btnn {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .btn-1, .btn-2 {
+        max-width: 180px;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    /* Hero images */
+    .hero-img {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 15px;
+    }
+    .hero-img img:nth-child(1) {
+        grid-column: span 2;
+    }
+    .hero-img img:nth-child(2) {
+        grid-column: span 2;
+    }
+    .hero-img img:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    /* Count Section */
+    .count {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 10px;
+        margin-top: 80px;
+    }
+
+    /* Services */
+    .services {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 60px 15px;
+    }
+    .s-1 {
+        text-align: center;
+        flex: 1 1 40%;
+    }
+
+    .s-1 h1{
+        display: inline-flex;
+    }
+
+    .s-1 p{
+        padding: 0 140px;
+    }
+
+    .star{
+        margin-top: 50px;
+    }
+    .web-2 {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .web, .web-d {
+        max-width: 400px;
+        text-align: center;
+        padding-bottom: 0;
+    }
+    .web-img {
+        margin-top: 40px;
+        
+    }
+
+    /* ad */
+    .ad-container{
+        max-width: 100%;
+    }
+
+    .ad img{
+        max-width: 50%;
+
+    }
+
+    /* Case Studies */
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+        justify-content: center;
+        max-width: 100%;
+        padding: 0 190px;
+        
+        
+    }
+    .card {
+        max-width: 100%;
+    }
+
+    /* Swipe container / skills */
+    .swiper {
+        padding: 20px;
+    }
+    .swiper-track span {
+        font-size: 16px;
+        margin: 0 20px;
+    }
+
+    /* Testimonial Slider */
+    .test-container {
+        flex-direction: row;
+        gap: 15px;
+    }
+    .test-card {
+        flex: 0 0 calc(50% - 15px);
+        max-width: 450px;
+        padding: 30px;
+    }
+    .test-card img {
+        width: 45px;
+    }
+    .test-card h4 {
+        font-size: 1rem;
+    }
+    .test-card p {
+        font-size: 0.9rem;
+    }
+
+    /* Accelerate Section */
+    .acc {
+        flex-direction: row;
+        gap: 40px;
+        padding: 40px;
+        text-align: left;
+    }
+    .acc h1 {
+        font-size: 32px;
+    }
+    .acc p {
+        font-size: 15px;
+    }
+    .acc button {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        padding: 40px 20px;
+      
+    }
+
+    .footer-content{
+        margin-top: 20px;
+        gap: 50px;
+    }
+    .footer-left {
+        text-align: left;
+    }
+    .footer-right {
+        justify-content: flex-end;
+    }
+    .f-img {
+        max-width: 100%;
+    }
+    .copyright {
+        text-align: center;
+        padding-left: 20px;
+    }
 
 }
