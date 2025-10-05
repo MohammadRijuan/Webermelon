@@ -3,8 +3,8 @@ const slides = document.querySelectorAll(".test-card");
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
 
-let currentIndex = 0; // track which "set" we are on
-let visibleCards = 2; // we want 2 cards visible
+let currentIndex = 0; 
+let visibleCards = 2;
 
 function updateSlide() {
   const offset = -(currentIndex * (100 / visibleCards));

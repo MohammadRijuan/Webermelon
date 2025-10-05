@@ -226,8 +226,7 @@ nav button:hover {
 
 
     gap: 3px;
-    /* Only applies to flex/grid children */
-
+    
     opacity: 1;
 }
 
@@ -835,7 +834,6 @@ hr {
         display: flex;
     }
 
-    /* Hide original menu & button */
     .n-item,
     .nav > div > button {
         display: none;
@@ -858,7 +856,7 @@ hr {
         z-index: 10;
     }
 
-    /* Show dropdown when nav.active */
+    
     .nav.active .dropdown {
         display: flex;
     }
@@ -889,7 +887,7 @@ hr {
 
     .banner {
         margin: 30px 15px;
-        /* reduce side margins */
+        
     }
 
     .banner h1 {
@@ -907,7 +905,7 @@ hr {
         padding: 5px 12px;
     }
 
-    /* Stack buttons vertically */
+    
     .btnn {
         flex-direction: column;
         gap: 12px;
@@ -916,17 +914,17 @@ hr {
     .btn-1,
     .btn-2 {
         width: 100%;
-        /* full width */
+        
         max-width: 280px;
-        /* prevent too wide */
+       
         height: auto;
-        /* let padding control height */
+        
     }
 
-    /* Hero Images stack instead of grid */
+ 
     .hero-img {
         grid-template-columns: 1fr;
-        /* single column */
+     
         gap: 12px;
     }
 
@@ -934,7 +932,7 @@ hr {
         border-radius: 10px;
     }
 
-    /* Reset grid spans so they don’t break layout */
+    
     .hero-img img:nth-child(1),
     .hero-img img:nth-child(2),
     .hero-img img:nth-child(3) {
@@ -990,14 +988,14 @@ hr {
 
     .card-container {
         grid-template-columns: 1fr;
-        /* stack cards vertically */
+       
         gap: 15px;
     }
 
     .card {
         max-width: 100%;
         text-align: center;
-        /* center cards on mobile */
+       
     }
 
     .card h3 {
@@ -1007,7 +1005,7 @@ hr {
 
     .card-p {
         justify-content: center;
-        /* center tags on mobile */
+        
     }
 
     .card p {
@@ -1021,7 +1019,7 @@ hr {
         max-width: 100%;
         padding: 0 10px;
         flex-direction: column;
-        /* stack test content vertically if needed */
+        
         gap: 15px;
     }
 
@@ -1040,33 +1038,33 @@ hr {
     .slider-container {
         margin: 20px auto;
         overflow: hidden;
-        /* Keep hiding overflow */
+       
     }
 
-    /* Slider track for horizontal scrolling */
+    
     .slider-track {
         display: flex;
         overflow-x: auto;
-        /* Enable swipe/scroll on mobile */
+        
         scroll-snap-type: x mandatory;
-        /* Snap cards when scrolling */
+      
         gap: 15px;
-        /* -webkit-overflow-scrolling: touch; */
+        
         padding-bottom: 10px;
-        /* Space for scroll */
+     
     }
 
-    /* Individual cards */
+ 
     .test-card {
         flex: 0 0 100%;
-        /* Card takes 80% of viewport width */
+     
         min-width: 250px;
-        /* Minimum width */
+        
         scroll-snap-align: start;
-        /* Snap effect */
+       
         margin-top: 20px;
         padding: 20px;
-        /* Reduce padding for mobile */
+       
         border-radius: 10px;
         background: linear-gradient(180deg, #f6fff9 0%, #ffffff 50%);
         border: 1px solid gray;
@@ -1075,7 +1073,7 @@ hr {
     /* Card content */
     .test-card img {
         width: 50px;
-        /* Smaller avatars */
+       
         height: auto;
     }
 
@@ -1101,7 +1099,7 @@ hr {
         gap: 5px;
     }
 
-    /* Hide arrows on mobile */
+
     .prev,
     .next {
         display: none;
@@ -1140,7 +1138,7 @@ hr {
         margin-right: 2px;
     }
 
-    /* Hide slider arrows on mobile */
+    
     .prev,
     .next {
         display: none;
@@ -1149,7 +1147,7 @@ hr {
     /* accelerate */
     .acc {
         flex-direction: column;
-        /* stack image and text */
+      
         text-align: center;
         padding: 30px;
         gap: 30px;
@@ -1214,7 +1212,7 @@ hr {
         font-size: 12px;
     }
 
-    /* text adjustments */
+  
     .footer-top h1 {
         font-size: 24px;
         line-height: 1.3;
@@ -1243,7 +1241,7 @@ hr {
 
     .footer-bottom {
         order: 3;
-        /* ensures it comes last on mobile */
+        
     }
 
 

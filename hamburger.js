@@ -1,7 +1,7 @@
 const nav = document.querySelector('.nav');
 const hamburger = document.querySelector('.hamburger');
 
-// Create dropdown container
+
 const dropdown = document.createElement('div');
 dropdown.classList.add('dropdown');
 
