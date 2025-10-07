@@ -2112,10 +2112,9 @@ letter-spacing: 0%;
     }
 
 
-    .line,.lines,.services::before,.case-line::before, .case-line::after, .services::after,.c-line,.c-lines,.case-line::after,.acc::before, .acc::after,.horizontal-line,.f-line,.f-lines,.footer-grid::before, .footer-grid::after  {
+    .c-line,.c-lines,.case-line::after,.acc::before, .acc::after,.horizontal-line,.f-line,.f-lines,.footer-grid::before, .footer-grid::after ,.head-line,.head::before,.line,.lines ,.services::after ,.services::before{
         display: none;
     }
-
     /* Swipe container / skills */
     .swiper {
         padding: 20px;
