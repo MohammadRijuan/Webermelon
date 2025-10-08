@@ -1,20 +1,29 @@
 const counters = document.querySelectorAll('.co h1');
 
-counters.forEach(counter => {
+function runCounterSequentially(index = 0) {
+  if (index >= counters.length) return; // stop when all counters done
+
+  const counter = counters[index];
+  const target = +counter.getAttribute('data-target');
+  const span = counter.querySelector('.c');
+
+  let count = 0;
+  const increment = target / 100;
+
   const updateCount = () => {
-    const target = +counter.getAttribute('data-target'); // target number
-    const span = counter.querySelector('.c');
-    let count = +counter.textContent.replace(/\D/g, ''); // remove + sign
-
-    const increment = target / 100; // speed control
-
-    if(count < target){
-      counter.firstChild.textContent = Math.ceil(count + increment);
-      setTimeout(updateCount, 100); // updates every 10ms
+    if (count < target) {
+      count += increment;
+      counter.firstChild.textContent = Math.ceil(count);
+      setTimeout(updateCount, 100);
     } else {
-      counter.firstChild.textContent = target; // ensure it ends exactly
+      counter.firstChild.textContent = target;
+      // after current finishes, move to the next one
+      runCounterSequentially(index + 1);
     }
-  }
+  };
 
   updateCount();
-});
+}
+
+// start with the first counter
+runCounterSequentially();
