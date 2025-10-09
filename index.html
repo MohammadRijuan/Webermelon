@@ -36,7 +36,7 @@
                     </i>
                 </div>
 
-                <div class="dropdown_menu  open">
+                <div class="dropdown_menu">
                     <li class="li-1"><a href="services">Services</a></li>
                     <li class="li-2"><a href="contact">Contact us</a></li>
                     <li class="li-3"><a href="about">About us</a></li>
@@ -612,14 +612,13 @@
 
 
     <script>
-        const toggleBtn = document.querySelector('.toggle_btn');
-        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const toggleBtnIcon = document.querySelector('.toggle-btn i');
         const dropdownMenu = document.querySelector('.dropdown_menu');
 
         toggleBtn.onclick = function () {
             dropdownMenu.classList.toggle('open');
 
-            // Toggle icon
             if (dropdownMenu.classList.contains('open')) {
                 toggleBtnIcon.classList = 'fa-solid fa-xmark';
             } else {
