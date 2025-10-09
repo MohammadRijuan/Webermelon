@@ -518,7 +518,7 @@ a {
     font-family: 'Urbanist', sans-serif;
     font-style: italic;
     font-weight: 600;
-    font-style: normal;
+
     color: #000;
     font-size: 40px;
     line-height: 136%;
@@ -537,7 +537,7 @@ a {
 .author h4 {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
-    font-style: medium;
+    font-style: normal;
     font-size: 20px;
 
     line-height: 136%;
@@ -725,7 +725,7 @@ a {
 }
 
 .s-1 button {
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: rgba(65, 255, 158, 1);
 
     color: #000000;
@@ -970,7 +970,7 @@ a {
 
 
 .case-line::after {
-    left: 46.25%;
+    left: 46.30%;
     top: 30%;
     height: 61.80%;
 }
@@ -1428,11 +1428,13 @@ a {
 .footer-top h6 {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-style: Regular;
+    font-style: normal;
     font-size: 15.79px;
 
     line-height: 31.58px;
     letter-spacing: -6%;
+    color: rgba(241, 231, 222, 1);
+;
 
 }
 
@@ -1753,8 +1755,8 @@ hr {
 
 .slider-dots button {
     border: none;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     margin: 0 5px;
     border-radius: 50%;
     background-color: #ccc;
@@ -1795,6 +1797,10 @@ hr {
         /* display: block; */
 
         /* height: 0; */
+    }
+
+    .nav{
+        gap: 0;
     }
 
 
@@ -1852,6 +1858,7 @@ hr {
         justify-content: center;
 
         gap: 12px;
+        max-width: 95%;
     }
 
     .hero-img img {
@@ -1859,8 +1866,8 @@ hr {
     }
 
     .h-1,.h-2,.h-3{
-        max-width: 400px;
-        max-height: 260px;
+        max-width: 95%;
+        max-height: 95%;
         
     }
 
@@ -1895,16 +1902,23 @@ hr {
         max-width: 100%;
     }
 
-    .web,
+     .web,
     .web-d {
         max-width: 100%;
         /* padding: 20px; */
         text-align: center;
+        max-height: 100%;
     }
 
     .web-img {
         /* margin-top: 30px; */
+        max-width: 95%;
     }
+    .web-img img{
+        max-width: 95%;
+        padding-bottom: 0;
+    }
+   
 
     .case-line{
         align-items: center;
@@ -1928,12 +1942,13 @@ hr {
         flex-direction: column;
         padding-left: 20px;
         text-align: center;
+        max-width: 95%;
         
     }
         
 
     .card {
-        max-width: 200px;
+        max-width: 95%;
         text-align: center;
 
     }
@@ -1943,7 +1958,7 @@ hr {
     }
 
     .card img{
-        max-width: 400px;
+        max-width: 95%;
     }
 
     .card h3 {
@@ -2002,6 +2017,7 @@ hr {
     .slider-container {
         margin: 20px auto;
         /* overflow: hidden; */
+        max-width: 95%;
 
     }
 
@@ -2034,8 +2050,8 @@ hr {
     .test-card {
         flex: 0 0 calc(100%);
         /* max-width: 550px; */
-        max-width: 480px;
-        padding: 30px;
+        /* max-width: 95%; */
+        /* padding: 30px; */
     }
 
     .test-card img {
@@ -2058,13 +2074,16 @@ hr {
         flex-direction: column;
 
         text-align: center;
-        padding: 30px;
-        gap: 30px;
+        padding: 10px;
+        gap: 10px;
+        max-width: 95%;
+        max-height: 100%;
     }
 
     .acc h1 {
         font-size: 26px;
         line-height: 32px;
+        margin-bottom: 0;
     }
 
     .acc p {
@@ -2079,8 +2098,9 @@ hr {
     }
 
     .acc-img{
-        max-width: 450px;
-        max-height: 200px;
+        max-width: 95%;
+        /* max-height: 200px; */
+        max-height: 0%;
     }
 
 
@@ -2289,6 +2309,7 @@ hr {
 
     .web-img {
         /* margin-top: 40px; */
+        /* max-width: 100%; */
 
     }
 
@@ -2303,15 +2324,7 @@ hr {
     }
 
     /* Case Studies */
-    .card-container {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 5px;
-        justify-content: center;
-        max-width: 100%;
-        padding: 0 190px;
-
-
-    }
+    
     .case-line{
        
     }
