@@ -36,12 +36,12 @@
                     </i>
                 </div>
 
-                <!-- <div class="dropdown_menu open">
+                <div class="dropdown_menu  open">
                     <li class="li-1"><a href="services">Services</a></li>
                     <li class="li-2"><a href="contact">Contact us</a></li>
                     <li class="li-3"><a href="about">About us</a></li>
                     <li><a href="#" class="action_btn">Get Started</a></li>
-                </div> -->
+                </div>
             </nav>
 
             <section class="banner">
@@ -187,65 +187,81 @@
     </section>
 
     <!-- case studies section -->
-    <section class="case-container">
-        <div class="case-line">
-            <h1>Case Studies</h1>
-            <div class="case-para">
-                <p class="case-p">From designs to marketing , Webermelon serves all digital services</p>
-                <p class="case-p">your business needs to
-                    start and be
-                    succeded</p>
+    <section class="case">
+        <div class="case-container">
+            <div class="case-line">
+                <h1>Case Studies</h1>
+                <div class="case-para">
+                    <p class="case-p">From designs to marketing , Webermelon serves all digital services</p>
+                    <p class="case-p">your business needs to
+                        start and be
+                        succeded</p>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div>
+                            <img src="./asset/original-023504fb27e33a5d0711d76e9c68da4b.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-p">
+                                <p class="cards-p">Website</p>
+                                <p class="cards-p">WordPress</p>
+                            </div>
+                            <h3 class="cards-h3">Web Application Development</h3>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <img src="./asset/original-7924781d9d924ae72f512d9481642817.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-p">
+                                <p class="cards-p">Website</p>
+                                <p class="cards-p">WordPress</p>
+                            </div>
+                            <h3 class="cards-h3">Web Application Development</h3>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <img src="./asset/original-023504fb27e33a5d0711d76e9c68da4b.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-p">
+                                <p class="cards-p">Website</p>
+                                <p class="cards-p">WordPress</p>
+                            </div>
+                            <h3 class="cards-h3">Web Application Development</h3>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <img src="./asset/original-7924781d9d924ae72f512d9481642817.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="card-p">
+                                <p class="cards-p">Website</p>
+                                <p class="cards-p">WordPress</p>
+                            </div>
+                            <h3 class="cards-h3">Web Application Development</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="c-line line1"></div>
+                <div class="c-line line2"></div>
+
             </div>
-            <div class="card-container">
-                <div class="card">
-                    <div>
-                        <img src="./asset/original-023504fb27e33a5d0711d76e9c68da4b.png" alt="">
-                    </div>
-                    <div class="card-p">
-                        <p class="cards-p">Website</p>
-                        <p class="cards-p">WordPress</p>
-                    </div>
-                    <h3 class="cards-h3">Web Application Development</h3>
-                </div>
-
-                <div class="card">
-                    <img src="./asset/original-7924781d9d924ae72f512d9481642817.png" alt="">
-                    <div class="card-p">
-                        <p class="cards-p">Website</p>
-                        <p class="cards-p">WordPress</p>
-                    </div>
-                    <h3 class="cards-h3">Web Application Development</h3>
-                </div>
-
-                <div class="card">
-                    <img src="./asset/original-023504fb27e33a5d0711d76e9c68da4b.png" alt="">
-                    <div class="card-p">
-                        <p class="cards-p">Website</p>
-                        <p class="cards-p">WordPress</p>
-                    </div>
-                    <h3 class="cards-h3">Web Application Development</h3>
-                </div>
-
-                <div class="card">
-                    <img src="./asset/original-7924781d9d924ae72f512d9481642817.png" alt="">
-                    <div class="card-p">
-                        <p class="cards-p">Website</p>
-                        <p class="cards-p">WordPress</p>
-                    </div>
-                    <h3 class="cards-h3">Web Application Development</h3>
-                </div>
-            </div>
-
-
-            <div class="c-line line1"></div>
-            <div class="c-line line2"></div>
+            <div class="c-lines line3"></div>
+            <div class="c-lines line4"></div>
+            <div class="c-lines line5"></div>
+            <div class="c-lines line6"></div>
 
         </div>
-        <div class="c-lines line3"></div>
-        <div class="c-lines line4"></div>
-        <div class="c-lines line5"></div>
-        <div class="c-lines line6"></div>
-
     </section>
 
     <!-- skill section -->
@@ -595,18 +611,24 @@
 
 
 
-</body>
-<!-- <script>
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const dropdownMenu = document.querySelector('.dropdown_menu')
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropdownMenu = document.querySelector('.dropdown_menu');
 
-        toggleBtn.onclick = function(){
-            dropdownMenu.classList.toggle('open')
+        toggleBtn.onclick = function () {
+            dropdownMenu.classList.toggle('open');
 
-            toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+            // Toggle icon
+            if (dropdownMenu.classList.contains('open')) {
+                toggleBtnIcon.classList = 'fa-solid fa-xmark';
+            } else {
+                toggleBtnIcon.classList = 'fa-solid fa-bars';
+            }
         }
-    </script> -->
+
+    </script>
+</body>
 <script src="slider.js"></script>
 <script src="swiper.js"></script>
 <!-- <script src="hamburger.js"></script> -->
