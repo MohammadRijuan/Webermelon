@@ -88,34 +88,34 @@
 
 .head-line.line1 {
     /* left: 1%; */
-    top: 63.3%;
+    /* top: 63.3%; */
 }
 
 .head-line.line2 {
     left: 26.80%;
-    top: 63.3%;
+    /* top: 63.3%; */
 
 }
 
 .head-line.line3 {
     left: 29.60%;
-    top: 63.3%;
+    /* top: 63.3%; */
 
 }
 
 .head-line.line4 {
     left: 72%;
-    top: 63.3%;
+    /* top: 63.3%; */
 }
 
 .head-line.line5 {
     left: 74.80%;
-    top: 63.3%;
+    /* top: 63.3%; */
 }
 
 .head-line.line6 {
     left: 100%;
-    top: 63.3%;
+    /* top: 63.3%; */
 }
 
 .nav {
@@ -187,12 +187,17 @@
 
     border-radius: 50px;
     color: #ffffff;
-    padding: 8px 30.60px;
+    padding: 8px 30.50px;
 
     font-size: 16px;
     font-weight: 400;
     cursor: pointer;
 
+}
+
+.action_btn:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 20px rgba(0, 255, 179, 0.3); 
 }
 
 .n-item {
@@ -375,6 +380,16 @@ a {
     cursor: pointer;
 
     opacity: 1;
+}
+
+.btn-1:hover {
+  transform: scale(1.05); 
+  /* box-shadow: 0 8px 20px rgba(0, 255, 179, 0.3);  */
+}
+
+.btn-2:hover {
+  transform: scale(1.05); 
+  /* box-shadow: 0 8px 20px rgba(0, 255, 179, 0.3);  */
 }
 
 .hero-img {
@@ -566,29 +581,36 @@ a {
     margin: 0 auto;
     overflow: hidden;
     white-space: nowrap;
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
+    /* width: 100%; */
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
 
-}
+    /* padding: 24px; */
+    margin: 0 auto;
 
-.ad {
+
+
     display: flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
     justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 80px;
-    animation: scroll 20s linear infinite;
-    gap: 52px;
+    /* gap: 52px; */
 
 }
 
+.group-ad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.8em;
+    animation: spin 15s infinite linear;
+    padding-right: 1.8em;
+}
 
 
-.ad img {
-    /* height: 100px; */
-    /* adjust size */
+.group-img {
     margin-right: 20px;
 
     max-width: 186;
@@ -597,14 +619,9 @@ a {
 
 }
 
-@keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-50%);
-    }
+@keyframes spin{
+    from {translate: 0;}
+    to {translate: -100%;}
 }
 
 
@@ -756,6 +773,11 @@ a {
 
 }
 
+.s-1 button:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 20px rgba(0, 255, 179, 0.3); 
+}
+
 .star {
     margin-top: 160px;
 
@@ -865,40 +887,47 @@ a {
 }
 
 
-/* swiper */
-.skill-container {
-    /* margin-top: 100px; */
-    background: #0c0c2c;
-}
-
-.skill {
-    width: 100%;
-    /* max-width: 1489px; */
-    overflow: hidden;
+/* carosel */
+.carosel{
+    display: flex;
+    background: #0c0c2c; 
+    /* width: 100%; */
     white-space: nowrap;
-    padding: 24px;
+    /* padding: 24px; */
     margin: 0 auto;
+    overflow: hidden;
+
 }
 
-.skill-track {
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 15s infinite linear;
+    padding-right: 1em;
+}
+
+.card-skill{
+    flex: 0 0 5em;
     font-family: 'Inter Display', sans-serif;
     display: flex;
     gap: 60px;
-    will-change: transform;
-    animation: marquee 25s linear infinite;
-    /* speed control */
-}
+    /* will-change: transform; */
 
-.skill-track span {
     display: inline-block;
     color: white;
     font-size: 18px;
     font-weight: 500;
     white-space: nowrap;
     line-height: 136%;
+
+    text-align: center;
+    align-content: center;
+    padding: 1em;
 }
 
-.skill-track span::before {
+.card-skill::before{
     content: "•";
     color: #00ffb3;
     max-width: 10px;
@@ -907,16 +936,13 @@ a {
     font-size: 20px;
 }
 
-/* smooth infinite marquee */
-@keyframes marquee {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-50%);
-    }
+@keyframes spin{
+    from {translate: 0;}
+    to {translate: -100%;}
 }
+
+
+
 
 
 /* case section */
@@ -1249,6 +1275,11 @@ a {
     letter-spacing: 0%;
     text-align: center;
 
+}
+
+.acc button:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 20px rgba(0, 255, 179, 0.3); 
 }
 
 
@@ -1617,7 +1648,7 @@ hr {
 }
 
 .test-p p {
-    margin-top: 4px;
+    /* margin-top: 4px; */
     color: rgba(76, 76, 76, 1);
 
     font-family: 'Inter Display', sans-serif;
@@ -1646,8 +1677,14 @@ hr {
     line-height: 56px;
     letter-spacing: -2%;
     text-align: center;
+    margin-bottom: 8px;
 
 }
+
+/* .test .test-con{
+    gap: 8px;
+
+} */
 
 .test-card {
     /* flex: 0 0 calc(40% - 85.8px); */
