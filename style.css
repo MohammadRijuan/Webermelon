@@ -12,6 +12,12 @@
     /* font-weight: bold; */
 }
 
+html,
+body {
+  overflow-x: hidden;       
+  touch-action: pan-y;      /* Allow only vertical scrolling */
+}
+
 
 
 .header {
