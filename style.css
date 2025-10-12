@@ -224,6 +224,13 @@ body {
     letter-spacing: 0%;
 }
 
+.n-item li a:hover {
+  color: green; 
+            
+  transform: translateY(-2px);
+ 
+}
+
 li {
     list-style: none;
 }
