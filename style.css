@@ -1009,7 +1009,7 @@ a {
 }
 
 .case-line::before {
-    left: 0;
+    left: 0%;
     top: 30%;
     height: 61.80%;
 }
@@ -1033,7 +1033,7 @@ a {
 }
 
 .c-line.line1 {
-    left: 52.9%;
+    left: 52.88%;
     top: 30%;
     height: 61.80%;
 }
@@ -1056,11 +1056,11 @@ a {
 
 .c-lines.line3 {
     top: 22.6%;
-    right: 23%;
+    right: 47%;
 }
 
 .c-lines.line4 {
-    left: 23%;
+    left: 47%;
     top: 48.3%;
     /* width: 100%; */
 }
@@ -1068,13 +1068,13 @@ a {
 .c-lines.line5 {
     top: 59.95%;
     /* width: 100%; */
-    right: 23%;
+    right: 47%;
 }
 
 .c-lines.line6 {
     top: 85.60%;
     /* width: 100%; */
-    right: 23%;
+    right:47%;
 
 }
 
@@ -1867,6 +1867,10 @@ hr {
         gap: 0px;
     }
 
+    .nav .logo{
+        max-width: 100%;
+    }
+
 
 
 
@@ -1949,6 +1953,13 @@ hr {
         row-gap: 20px;
     }
 
+
+    /* ceo */
+    .testimonial .quote, .testimonial .highlight{
+        font-size: 32px;
+
+    }
+
     /* services */
 
     .services {
@@ -1960,6 +1971,11 @@ hr {
 
     .s-1 {
         text-align: center;
+    }
+
+    .s-1 h1{
+        font-size: 32px;
+       
     }
 
     .s-1 button {
@@ -2057,6 +2073,10 @@ hr {
     }
 
     /* testimonial */
+
+    .test h1{
+        font-size: 32px;
+    }
 
     .test-card {
         max-height: 100%;
